@@ -1,0 +1,107 @@
+* {
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body {
+    margin: 0;
+    background-image: url(./background.jpg);
+}
+
+nav {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(55, 26, 27, 0.9);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.logo {
+    object-fit: contain;
+    height: 120px;
+    margin-left: 40px;
+}
+
+.user {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.panier {
+    font-size: 1.5rem;
+    color: rgba(138, 147, 97, 0.9);
+    text-decoration: underline;
+}
+
+.panier:hover {
+    color: rgba(138, 147, 97, 1);
+    cursor: pointer;
+}
+
+.admin {
+    font-size: 1.5rem;
+    color: red;
+    text-decoration: underline;
+}
+
+.grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titre {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ADD8E6;
+}
+
+.oeuvre {
+    height: 300px;
+    width: 300px;
+    background-color: rgba(55, 26, 27, 0.9);
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+button {
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(138, 147, 97, 0.9);
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: black;
+}
+
+button:hover {
+    background-color: rgba(138, 147, 97, 1);
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 613px) {
+    nav {
+        height: 200px;
+        flex-direction: column;
+    }
+}

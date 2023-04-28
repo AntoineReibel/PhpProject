@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./background.jpg);
+}
+
+.card {
+    height: 600px;
+    width: 340px;
+    background-color: rgba(55, 26, 27, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    border-radius: 15px;
+    gap: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.title{
+font-weight: 800;
+font-size: 1.5rem;
+color: #fff;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px
+}
+
+input {
+    width: 100%;
+    height: 24px;
+    border-radius: 5px;
+    border: solid black 1px;
+    background-color: #8a9361;
+    color: black;
+
+}
+
+::placeholder{
+    color:darkslategray;
+}
+
+button {
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(138, 147, 97, 0.9);
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: black;
+}
+
+button:hover{
+    background-color: rgba(138, 147, 97, 1);
+    cursor: pointer;
+}
+
+.spaceButton {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rembrandt {
+    object-fit: contain;
+    max-width: 65%;
+    border-radius: 5px;
+}
